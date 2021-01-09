@@ -17,14 +17,12 @@ showNotes();
 
 function addNote() {
     let notesFromLocal = JSON.parse(localStorage.getItem("localNotes"));
-    if (titleTxt.value&&addTxt.value){
-    let myobj={
-        title: titleTxt.value,
-         txt: addTxt.value,
-
-    }}
-    else{alert("Enter all fields....")}
+    
+    
     if (addTxt.value) {
+        let myobj={
+            title: titleTxt.value,
+             txt: addTxt.value,}
         if (notesFromLocal == null) {
             notesFromLocal = [];
             notesFromLocal.push(myobj);
@@ -34,7 +32,7 @@ function addNote() {
             localStorage.setItem("localNotes", JSON.stringify(notesFromLocal));
         }
     } else {
-        alert("Please add a note... ");
+        alert("Enter all fields....")
     }
 
     showNotes();
