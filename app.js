@@ -17,11 +17,13 @@ showNotes();
 
 function addNote() {
     let notesFromLocal = JSON.parse(localStorage.getItem("localNotes"));
+    if (titleTxt.value&&addTxt.value){
     let myobj={
         title: titleTxt.value,
          txt: addTxt.value,
 
-    }
+    }}
+    else{alert("Enter all fields....")}
     if (addTxt.value) {
         if (notesFromLocal == null) {
             notesFromLocal = [];
