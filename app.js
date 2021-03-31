@@ -53,7 +53,8 @@ function showNotes() {
     </div>`;
         });
     }
-}
+
+else{notes.innerHTML=`<h5>No notes to show !`}}
 
 function deleteNote(index) {
     notesFromLocal.splice(index, 1);

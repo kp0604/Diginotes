@@ -13,33 +13,30 @@
   </head>
 
   <body id="body">
-    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div class="col-10 row">
-      <a class="navbar-brand" href="#">TaNo</a>
-      <a class="nav-link" onclick="showNotes()" href="#body">Home</a>
-      <a class="nav-link " href="#notes">Notes</a>
-
+        <a class="navbar-brand" href="#">TaNo</a>
+        <a class="nav-link" onclick="showNotes()" href="#body">Home</a>
+        <a class="nav-link" href="#notes">Notes</a>
       </div>
-     
-        <form class="d-flex ">
-          <input
-            id="searchTxt"
-            class="form-control me-2 "
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
 
-          <button id="searchBtn" class="btn btn-outline-light " type="submit">
-            Search
-          </button>
-        </form>
-      
+      <form class="d-flex">
+        <input
+          id="searchTxt"
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+
+        <button id="searchBtn" class="btn btn-outline-light" type="submit">
+          Search
+        </button>
+      </form>
     </nav>
 
-    <div class="container my-3  ">
-      <div class="  ">
+    <div class="container my-5 text-center  ">
+      <div class=" ">
         <h1>Create Note</h1>
 
         <hr />
@@ -77,11 +74,11 @@
 
       <hr />
 
-      <div class="">
-        <h1>Your Notes</h1>
+      <div class="text-center ">
+        <h1 class="">Your Notes</h1>
         <hr />
 
-        <div id="notes" class="row container-fluid"></div>
+        <div id="notes" class=" row container-fluid  "></div>
       </div>
     </div>
 
