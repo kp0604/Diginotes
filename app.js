@@ -42,7 +42,7 @@ function addNote() {
 function showNotes() {
     let date = new Date()
     if ((notesFromLocal = JSON.parse(localStorage.getItem("localNotes")))) {
-        notes.innerHTML = "";
+        // notes.innerHTML = "";
         notesFromLocal.map((note, index) => {
 
             notes.innerHTML +=
@@ -64,7 +64,7 @@ function showNotes() {
 
                         <div class="d-flex justify-content-between  align-items-center align-contents-end mt-2">
 
-                            <div class="mx-3" >${date.getDate()}-${date.getMonth()}-${date.getFullYear()}</div>
+                            <div class="mx-3" >Created : ${date.getDate()}-${date.getMonth()}-${date.getFullYear()}</div>
                             <div>
                                 <button id="" onclick="" class="btn-sm btn-primary mx-1 "><i class="fa fa-pen"></i></button>
                                 <button id="${index}" onclick="deleteNote(this.id)" class="btn-sm btn-danger me-3 ">
