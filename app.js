@@ -39,6 +39,8 @@ function addNote(e) {
     titleTxt.value = "";
 }
 
+
+
 function showNotes() {
     let date = new Date()
     if ((notesFromLocal = JSON.parse(localStorage.getItem("localNotes")))) {
