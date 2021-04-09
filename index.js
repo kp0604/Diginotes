@@ -41,9 +41,9 @@ function addNote(e) {
  function showNotes() {
   let date = new Date();
   notes.innerHTML = "";
-  notesFromLocal =  JSON.parse(localStorage.getItem("localNotes"))
-    notesFromLocal.map((note, index) => {
-      notes.innerHTML += ` <div class="col-lg-4 col-md-4 col-sm-12 noteCard justify-content-center  px-2 my-2" id="no" >
+   if (notesFromLocal = JSON.parse(localStorage.getItem("localNotes"))) {
+     notesFromLocal.map((note, index) => {
+       notes.innerHTML += ` <div class="col-lg-4 col-md-4 col-sm-12 noteCard justify-content-center  px-2 my-2" id="no" >
             <div
              class="card accordion accordion-flush   "
               id="accordionFlushExample${index}"  >
@@ -88,7 +88,8 @@ function addNote(e) {
           </div>
         </div>`;
       
-    })
+     })
+   }
   
   
   if(notes.innerHTML=="") {
