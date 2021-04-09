@@ -38,7 +38,7 @@
     url("bg2.jpg");
   /* background-image: linear-gradient(rgb(5, 5, 5), rgba(7, 4, 4, 0.336)),
     url("https://source.unsplash.com/1366x768/? cities"); */
-    /* background-position: top; */
+    background-position: top;
     /* background-color:darkcyan; */
     background-size: cover;
     background-attachment: fixed;
