@@ -70,19 +70,19 @@ function addNote(e) {
               data-bs-parent="#accordionFlushExample${index}">
               
               <div class="container row justify-content-center m-0 my-3 p-1">
-               <p class="col-10 m-0 p-0 ">
+               <p class="col-10 m-0 p-0 fst-italic ">
                  Created : ${date.getDate()}-${date.getMonth()}-${date.getFullYear()}
                </p>
                 <button
                   id="${index}"
                   onclick="deleteNote(this.id)"
-                  class="btn-sm  col-1 p-0 mx-1 "
-                  style="background-color:white">
+                  class="btn  col-1 p-0 mx-1 "
+                  style="background-color:">
                 
                   <i class="fa fa-trash"></i>
                 </button>
               </div>
-              <div class="accordion-body">${note.txt}</div>
+              <div class="accordion-body fw-normal">${note.txt}</div>
             </div>
           </div>
           </div>
