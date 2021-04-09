@@ -1,0 +1,48 @@
+.Yn {
+  background-color: gainsboro;
+  /* padding-right:0px; */
+}
+
+.Nnav {
+  background-color: seagreen;
+}
+
+.imgcn {
+  height: 150px;
+  width: 150px;
+}
+
+.ccard {
+  height: fit-content;
+  width: fit-content;
+}
+
+.wordwrap {
+  word-wrap: break-word;
+}
+
+.ntcon {
+  min-height: 85vh;
+}
+
+.bgnav1 {
+  background-image: linear-gradient(rgb(75, 74, 74), rgba(7, 4, 4, 0.336)),
+    url("https://source.unsplash.com/1366x768/? work ");
+  min-height: 20vh;
+}
+
+.bgnav2 {
+  background-color: rgb(255, 206, 71);
+}
+
+.bgCard {
+  background-color: rgb(250, 32, 32);
+}
+
+.bgaddbtn {
+  background-color: rgb(38, 136, 38);
+}
+
+.dn {
+  display: none;
+}
