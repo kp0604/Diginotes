@@ -34,7 +34,7 @@
 
 
 .bgnav1 {
-  background-image: linear-gradient(rgb(5, 5, 5), rgba(90, 84, 84, 0.336)),
+  background-image:linear-gradient(rgb(5, 5, 5), rgba(90, 84, 84, 0.336)),
     url("bg2.jpg");
   /* background-image: linear-gradient(rgb(5, 5, 5), rgba(7, 4, 4, 0.336)),
     url("https://source.unsplash.com/1366x768/? cities"); */
@@ -50,7 +50,11 @@
 }
 
 .bgnav2 {
-  background-color: rgb(255, 206, 71);
+  
+    background-image: linear-gradient(rgb(5, 5, 5), rgba(90, 84, 84, 0.336)),
+    url("bg2.jpg");
+    /* background-size: cover; */
+    
 }
 
 .bgCard {
