@@ -1,4 +1,4 @@
-console.log("hey");
+// console.log("hey");
 
 const addTxt = document.getElementById("addTxt");
 
